@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <!-- CONTAINER DATE -->
+        <div class="date">
+            <h3>Today's Date</h3>
+            <input type="date">
+        </div>
+
+        <!-- CONTAINER BIRTH -->
+        <div class="birth">
+            <h3>Date of Birth</h3>
+            <input type="date">
+        </div>
+
+        <!-- CONTAINER BUTTONS -->
+        <div class="buttons">
+            <button id="btn1" onclick="calculateAge()">Calculate</button>
+            <button id="btn2" onclick="clearFields()">Clear</button>
+        </div>
+
+        <!-- CONTAINER RESUTLT -->
+        <div class="result">
+            <h3>Age</h3>
+
+            <!-- CONTAINER TABLE -->
+            <table>
+                <tr>
+                    <th>Years</th>
+                    <th>Months</th>
+                    <th>Days</th>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>06</td>
+                    <td>16</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

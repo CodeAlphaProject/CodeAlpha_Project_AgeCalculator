@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 70%;
+    width: 20%;
+    padding: 50px;
+}
+
+.container h1 {
+    text-align: center;
+    letter-spacing: 0.05em;
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+
+/* CONTAINER DATE */
+.container .date {
+    padding: 10px;
+    background-color: black;
+}
+
+.container .date h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+
+.container .date input {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+
+}
+
+.container .date input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+    font-size: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+}
+
+/* CONTAINER BIRTH */
+.container .birth {
+    padding: 10px;
+    background-color: black;
+}
+
+.container .birth h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+
+.container .birth input {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px 6px;
+    border: none;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+
+}
+
+.container .birth input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+    font-size: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+}
+
+/* CONTAINER BUTTONS */
+.container .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .buttons button {
+    padding: 12px 34px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    margin-left: 13px;
+}
+
+.container button#btn1 {
+    cursor: pointer;
+}
+
+.container button#btn2 {
+    cursor: pointer;
+
+}
+
+/* CONTAINER RESULT */
+.container .result {
+    padding: 10px;
+}
+
+.container .result h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+}
+
+/* CONTAINER TABLE */
+.container .result table {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    width: 104%;
+    color: white;
+    text-align: center;
+}
+
+.container .result table tr {
+    font-size: 15px;
+
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width:480px) {
+    .container {
+        min-width: 100%;
+    }
+
+    .container .result table {
+        min-width: 104%;
+    }
+
+}
+
+@media only screen and (max-width:512px) {
+    .container {
+        min-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:720px) {
+    .container {
+        min-width: 90%;
+    }
+
+}
+
+@media only screen and (max-width:1080px) {
+    .container {
+        min-width: 90%;
+    }
+
+    .container .result table {
+        padding: 8px;
+        max-width: 102%;
+    }
+
+}
